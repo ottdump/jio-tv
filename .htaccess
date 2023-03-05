@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule ^([A-Za-z0-9-=-]+)/?$ index.php?pid=$1 [NC,L]
+RewriteRule ^PlayCatchup/([A-Za-z0-9-=-_-!-~--]+).m3u8/?$ index.php?catchupPid=$1 [NC,L]
+RewriteRule ^([A-Za-z0-9-=-_-!-~--]+).m3u8/?$ index.php?id=$1 [NC,L]
+RewriteRule ^FHD/([A-Za-z0-9-=-_-!-~--]+)/([A-Za-z0-9-=-_-!-~--]+)/?$ index.php?ch=$1&lice=$2 [NC,L]
+RewriteRule ^Catchup/([A-Za-z0-9-=-_-!-~--]+)/([A-Za-z0-9-=-_-!-~--]+)/([A-Za-z0-9-=-_-!-~--]+)/?$ index.php?caId=$1&showtime=$2&srno=$3 [NC,L]
+RewriteRule ^Catchup/([A-Za-z0-9-=-_-!-~--]+)/([A-Za-z0-9-=-_-!-~--]+)/?$ index.php?ca=$1&pg=$2 [NC,L]
